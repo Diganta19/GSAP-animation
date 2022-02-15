@@ -1,0 +1,124 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: 0;
+}
+
+html,
+body {
+  font-family: 'Raleway';
+  background-color: black;
+  height: 100%;
+  width: 100%;
+}
+
+header {
+  height: 100vh;
+  position: relative;
+  display: flex;
+}
+
+.cover {
+  height: 100%;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  right: 0;
+  object-fit: cover;
+  object-position: top;
+}
+
+nav {
+  background: white;
+  z-index: 2;
+  height: 20%;
+  width: 30%;
+  color: #916356;
+}
+
+.nav-closed {
+  display: flex;
+  justify-content: space-around;
+  height: 20%;
+  width: 30%;
+  align-items: center;
+  position: absolute;
+}
+
+.nav-closed h2 {
+  font-size: 30px;
+}
+
+.nav-closed ul {
+  display: flex;
+  width: 50%;
+  justify-content: space-around;
+  list-style: none;
+}
+
+.nav-open {
+  width: 30%;
+  height: 80%;
+  position: absolute;
+  top: 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: rgb(231, 207, 175);
+  opacity: 0;
+  pointer-events: none;
+}
+
+.clothing {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.clothing ul li {
+  padding-bottom: 20px;
+  list-style: none;
+  font-size: 17px;
+}
+
+.clothing h3 {
+  font-size: 50px;
+}
+
+.nav-img {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.nav-img img {
+  height: 250px;
+}
+
+.blogg {
+  width: 30%;
+  height: 80%;
+  position: absolute;
+  top: 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: rgb(231, 207, 175);
+  opacity: 0;
+  pointer-events: none;
+}
+.blogg h2 {
+  text-align: center;
+  font-size: 50px;
+  padding-bottom: 65px;
+  padding-top: 65px;
+  color: #916356;
+}
+.blogg p {
+  text-align: center;
+  font-size: 20px;
+  color: #916356;
+}
